@@ -1,4 +1,4 @@
-var password = "dzieci i ryby głosu nie mają";
+var password = prompt("Zaszyfruj hasło");
 var hided_password = "";
 var pass_length = password.length;
 var alphabet = 'aąbcćdeęfghijklłmnńoópqrsśtuvwxyzźż';
@@ -62,7 +62,7 @@ function check(num) {
         document.getElementById('alphabet').innerHTML = ' Wygrałeś!!! :D <br /><br /><br /> <span class="reset" onclick="location.reload()">Reset</span>';
     }
     if (fails >= 9) {
-        document.getElementById('alphabet').innerHTML = ' Przegrałeś :( :( Prawidłowe hasło: <br /> "Dzieci i ryby głosu nie mają" <br /><br /><br /> <span class="reset" onclick="location.reload()">Reset</span>';
+        document.getElementById('alphabet').innerHTML = ' Przegrałeś :( :( Prawidłowe hasło: <br /> "' + password + '" <br /><br /><br /> <span class="reset" onclick="location.reload()">Reset</span>';
     }
 }
 window.onload = start;

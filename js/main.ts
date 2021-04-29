@@ -1,5 +1,5 @@
 
-let password = "dzieci i ryby głosu nie mają"
+let password = prompt("Zaszyfruj hasło")
 let hided_password = ""
 let pass_length = password.length
 let alphabet = 'aąbcćdeęfghijklłmnńoópqrsśtuvwxyzźż'
@@ -73,7 +73,7 @@ function check(num){
     }
     
     if(fails >= 9){
-        document.getElementById('alphabet').innerHTML = ' Przegrałeś :( :( Prawidłowe hasło: <br /> "Dzieci i ryby głosu nie mają" <br /><br /><br /> <span class="reset" onclick="location.reload()">Reset</span>'
+        document.getElementById('alphabet').innerHTML = ' Przegrałeś :( :( Prawidłowe hasło: <br /> "' + password + '" <br /><br /><br /> <span class="reset" onclick="location.reload()">Reset</span>'
     }
     
 }
